@@ -1,5 +1,5 @@
 #!/bin/sh
 
 pgrep redshift>/dev/null &&
-    killall redshift &>/dev/null || \
+    killall redshift &>/dev/null ||
     setsid redshift & >/dev/null
