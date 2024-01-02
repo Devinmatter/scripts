@@ -5,8 +5,8 @@ xkbmap=$(setxkbmap -query | grep -i 'layout' | awk '{print $2}')
 case $xkbmap in
     us)
         setxkbmap es;
-        dunstify "Keyboard Layout" "Switching to Spanish" ;;
+        dunstify "Keyboard Layout" "Switching to Spanish" -r 333 ;;
     es) 
         setxkbmap us;
-        dunstify "Keyboard Layout" "Switching to English" ;;
+        dunstify "Keyboard Layout" "Switching to English" -r 333 ;;
 esac
