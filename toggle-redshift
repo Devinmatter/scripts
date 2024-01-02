@@ -1,4 +1,4 @@
 #!/bin/sh
 
 [ -z "$(pgrep -x redshift)" ] && \
-  (redshift -c ~/.config/redshift/redshift.conf &>/dev/null || redshift &>/dev/null) || (killall redshift &>/dev/null)
+    (redshift -c ~/.config/redshift/redshift.conf &>/dev/null || redshift &>/dev/null) || (killall redshift &>/dev/null)
