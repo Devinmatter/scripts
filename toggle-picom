@@ -2,4 +2,4 @@
 
 [ -z "$(pgrep -x picom)" ] && \
     (picom --config ~/.config/picom/picom.conf -b || picom -b &>/dev/null) || \
-    (killall picom &>/dev/null)
+    (pkill picom &>/dev/null)
